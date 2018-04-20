@@ -7,4 +7,5 @@ package com.steven.mvp.base;
  * @author: yanzhiwen
  */
 public interface BaseView {
+
 }

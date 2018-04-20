@@ -1,0 +1,9 @@
+{
+  "code": "200",
+  "data": {
+    "userName": "Steven",
+    "userSex": "man",
+    "id": 1
+  },
+  "msg": "success"
+}

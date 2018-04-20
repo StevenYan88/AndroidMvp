@@ -32,6 +32,7 @@ public class UserInfoPresenter extends BasePresenter<UserInfoContract.UserInfoVi
                     }
                 }
             }
+
             @Override
             public void onFailure(@NonNull Call<BaseResult<User>> call, @NonNull Throwable t) {
                 getView().onError(Constant.SERVER_EXCEPTION, t.getMessage());

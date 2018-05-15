@@ -1,30 +1,23 @@
-package com.steven.mvp;
+package com.steven.mvp.simple2.ui;
 
 import android.widget.TextView;
 
-import com.steven.mvp.base.BaseMvpActivity;
+import com.steven.mvp.R;
 import com.steven.mvp.model.User;
+import com.steven.mvp.simple2.base.BaseMvpActivity;
+import com.steven.mvp.simple2.mvp.UserInfoContract;
+import com.steven.mvp.simple2.mvp.UserInfoPresenter;
+import com.steven.mvp.simple2.inject.InjectPresenter;
 
-public class MainActivity extends BaseMvpActivity<UserInfoPresenter>
-        implements UserInfoContract.UserInfoView {
+public class MainActivity extends BaseMvpActivity implements UserInfoContract.UserInfoView {
+    //多个Presenter怎么处理 dagger处理，自己写dagger处理 自己写个注入
+    //一个View 里面肯定有多个Presenter情况，怎么处理，Dagger处理
+    @InjectPresenter
+    private UserInfoPresenter mUserInfoPresenter;
     private TextView mTextView;
-    /**
-     * 创建Presenter
-     *
-     * @return
-     */
-    @Override
-    protected UserInfoPresenter createPresenter() {
-        return new UserInfoPresenter();
-    }
 
-    /**
-     * 返回Activity的布局Id
-     *
-     * @return
-     */
     @Override
-    protected int getLayoutId() {
+    public int getLayoutId() {
         return R.layout.activity_main;
     }
 
@@ -42,7 +35,7 @@ public class MainActivity extends BaseMvpActivity<UserInfoPresenter>
      */
     @Override
     protected void initData() {
-        getPresenter().getUserInfo("Steven");
+        mUserInfoPresenter.getUserInfo("Steven");
     }
 
     /**

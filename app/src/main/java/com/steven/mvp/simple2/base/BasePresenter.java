@@ -1,4 +1,6 @@
-package com.steven.mvp.base;
+package com.steven.mvp.simple2.base;
+
+import com.steven.mvp.simple1.BaseView;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -8,7 +10,7 @@ import java.lang.reflect.Type;
 
 /**
  * Description:
- * Data：3/27/2018-9:19 AM
+ * Data：5/10/2018-9:20 AM
  *
  * @author: yanzhiwen
  */

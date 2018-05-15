@@ -1,8 +1,10 @@
-package com.steven.mvp.base;
+package com.steven.mvp.simple1.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+
+import com.steven.mvp.simple1.BaseView;
 
 /**
  * Description:

@@ -1,15 +1,15 @@
-package com.steven.mvp;
+package com.steven.mvp.simple2.mvp;
 
 import com.steven.mvp.httpClient.RetrofitClient;
-import com.steven.mvp.base.BaseModel;
 import com.steven.mvp.model.BaseResult;
 import com.steven.mvp.model.User;
+import com.steven.mvp.simple2.base.BaseModel;
 
 import retrofit2.Call;
 
 /**
  * Description:
- * Data：3/27/2018-9:58 AM
+ * Data：5/10/2018-9:20 AM
  *
  * @author: yanzhiwen
  */

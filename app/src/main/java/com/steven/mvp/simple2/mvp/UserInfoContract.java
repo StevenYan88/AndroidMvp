@@ -1,20 +1,20 @@
-package com.steven.mvp;
+package com.steven.mvp.simple2.mvp;
 
-import com.steven.mvp.base.BaseView;
 import com.steven.mvp.model.BaseResult;
 import com.steven.mvp.model.User;
+import com.steven.mvp.simple1.BaseView;
 
 import retrofit2.Call;
 
 /**
  * Description:
- * Data：3/27/2018-9:19 AM
+ * Data：5/10/2018-9:20 AM
  *
  * @author: yanzhiwen
  */
 public class UserInfoContract {
     //View层
-    interface UserInfoView extends BaseView {
+   public interface UserInfoView extends BaseView {
         void onLoading();
 
         void onSuccess(User user);

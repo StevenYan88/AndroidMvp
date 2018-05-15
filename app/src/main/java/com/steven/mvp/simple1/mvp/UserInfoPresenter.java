@@ -1,10 +1,11 @@
-package com.steven.mvp;
+package com.steven.mvp.simple1.mvp;
 
 import android.support.annotation.NonNull;
 
-import com.steven.mvp.base.BasePresenter;
+import com.steven.mvp.Constant;
 import com.steven.mvp.model.BaseResult;
 import com.steven.mvp.model.User;
+import com.steven.mvp.simple1.base.BasePresenter;
 
 import retrofit2.Call;
 import retrofit2.Callback;

@@ -7,7 +7,7 @@
 
 **主要用的技术**：
 
-1. 泛型构建基类BaseView、BaseModel
+1. 泛型构建基类BaseView、BaseModel， 抽离，充分的解耦
 2. 利用JDK提供的源码动态代理创建View，因为V层都是接口
 3. 动态创建Model
 4. 解决View一对多Presenter，利用依赖注入的方式

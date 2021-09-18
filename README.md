@@ -1,4 +1,4 @@
-### 手写一个Mvp架构
+### Mvp架构介绍
 
 ![mvp.png](https://upload-images.jianshu.io/upload_images/1472453-1bc275d03ff98305.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

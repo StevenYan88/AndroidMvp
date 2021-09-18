@@ -21,9 +21,9 @@ public class BasePresenter<V extends BaseView, M extends BaseModel> {
     /**
      * 绑定View
      *
-     * @param view
+     * @param view 需要绑定的视图View层
      */
-    public void attach(final V view) {
+    public  void attach(final V view) {
         //动态代理
         mView = (V) Proxy.newProxyInstance(view.getClass().getClassLoader(), view.getClass().getInterfaces(), new InvocationHandler() {
             @Override

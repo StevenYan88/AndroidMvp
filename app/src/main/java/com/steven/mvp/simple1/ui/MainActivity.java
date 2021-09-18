@@ -8,13 +8,17 @@ import com.steven.mvp.model.User;
 import com.steven.mvp.simple1.mvp.UserInfoContract;
 import com.steven.mvp.simple1.mvp.UserInfoPresenter;
 
+/**
+ * View层-视图层
+ */
 public class MainActivity extends BaseMvpActivity<UserInfoPresenter>
         implements UserInfoContract.UserInfoView {
     private TextView mTextView;
+
     /**
      * 创建Presenter
      *
-     * @return
+     * @return Presenter
      */
     @Override
     protected UserInfoPresenter createPresenter() {

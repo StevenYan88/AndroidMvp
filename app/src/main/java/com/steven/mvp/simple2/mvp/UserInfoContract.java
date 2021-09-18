@@ -1,5 +1,6 @@
 package com.steven.mvp.simple2.mvp;
 
+import com.steven.mvp.httpClient.HttpCallback;
 import com.steven.mvp.model.BaseResult;
 import com.steven.mvp.model.User;
 import com.steven.mvp.simple1.BaseView;
@@ -30,6 +31,6 @@ public class UserInfoContract {
 
     //Model层，外部只需关心Model返回的数据,无需关心内部细节
     interface UserModel {
-        Call<BaseResult<User>> getUserInfo(String userName);
+        void getUserInfo(String userName, HttpCallback<User> httpCallback);
     }
 }
